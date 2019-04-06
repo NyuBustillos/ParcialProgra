@@ -1,0 +1,58 @@
+﻿@model MVCparcial1p.Models.AdrianaBustillosFriend
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdrianaBustillosFriend</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apodo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apodo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cumpleaños)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cumpleaños)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeAmigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeAmigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FriendlD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
